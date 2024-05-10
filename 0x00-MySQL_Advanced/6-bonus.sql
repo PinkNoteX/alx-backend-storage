@@ -9,7 +9,7 @@ BEGIN
     SELECT COUNT(id)
         INTO project_c
         FROM projects
-        WHERE name = project_n;
+        WHERE name = project_name;
     IF project_c = 0 THEN
         INSERT INTO projects(name)
             VALUES(project_name);
